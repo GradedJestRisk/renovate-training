@@ -5,5 +5,12 @@
   "labels": ["dependencies"],
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
-  "rebaseWhen": "auto"
+  "rebaseWhen": "auto",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["oxfmt"],
+      "automerge": true
+    }
+  ]
 }
