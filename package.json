@@ -9,7 +9,8 @@
     "lint:dependencies": "knip --no-progress",
     "lint:renovate-configuration": "renovate-config-validator --strict renovate.json",
     "test": "npm run format && npm run lint && npm run test:unit",
-    "test:unit": "mocha"
+    "test:unit": "mocha",
+    "dry-run": "renovate --platform=local --dry-run=extract"
   },
   "devDependencies": {
     "chai": "^6.0.0",
