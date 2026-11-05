@@ -1,0 +1,22 @@
+{
+  "name": "renovate-training",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
+    "lint": "knip --no-progress",
+    "test": "npm run format && npm run lint && npm run test:unit",
+    "test:unit": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^6.0.0",
+    "knip": "^6.34.0",
+    "mocha": "^12.0.0",
+    "oxfmt": "^0.67.0"
+  },
+  "engines": {
+    "node": "^26.12.1"
+  }
+}
