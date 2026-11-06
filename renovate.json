@@ -10,13 +10,10 @@
   "rebaseWhen": "auto",
   "packageRules": [
     {
+      "description": "Automerge all dev dependencies updates",
+      "groupName": "devDependencies",
       "matchDepTypes": ["devDependencies"],
-      "matchPackageNames": ["oxfmt"],
-      "automerge": true
-    },
-    {
-      "extends": ["packages:jsUnitTest"],
-      "groupName": "automated tests",
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true
     }
   ]
