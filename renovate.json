@@ -5,7 +5,9 @@
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
   "minimumReleaseAge": "7 days",
-  "commitMessagePrefix": "[BUMP]",
+  "branchNameStrict": true,
+  "branchPrefix": "dependencies-update-",
+  "commitMessagePrefix": "tech(api): ",
   "rebaseWhen": "auto",
   "packageRules": [
     {
