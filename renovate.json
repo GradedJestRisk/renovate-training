@@ -12,6 +12,11 @@
       "matchDepTypes": ["devDependencies"],
       "matchPackageNames": ["oxfmt"],
       "automerge": true
+    },
+    {
+      "extends": ["packages:jsUnitTest"],
+      "groupName": "automated tests",
+      "automerge": true
     }
   ]
 }
